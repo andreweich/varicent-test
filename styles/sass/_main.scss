@@ -1,0 +1,267 @@
+// hero styles
+
+.hero {
+    height: 65vh;
+    background-image: url(../assets/header-img.webp);
+    background-size: cover;  
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.hero-container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.concert {
+    margin-left: 15rem;
+    width: 400px;
+}
+
+.hero-content {
+    width: 65%;
+    margin: 50px 0 50px 20rem;
+
+    p {
+        font-size: 2rem;
+        font-weight: 300;
+        color: $grey;
+        margin: 20px 0;
+    }
+}
+
+.hero-content .button {
+    padding: 10px;
+}
+
+// clients section 
+
+.client-container ul {
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    padding: 20px 0;
+
+    li {
+        max-width: 120px;
+        min-width: 120px;
+        margin: 0 auto;
+    }
+}
+
+// section one 
+
+.section-one {
+    background-color: rgba(51, 94, 235, 1);
+    color: $light;
+    height: 55vh;
+}
+
+.quota-alexander {
+    height: 55vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.qa-content {
+    height: 40vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .button {
+        align-self: flex-start;
+    }
+}
+
+.small {
+    font-size: 1.7rem;
+}
+
+.qa-image {
+    width: 35%
+}
+
+.section-two {
+    background-color: rgba(16, 35, 158, 1);
+    color: $light;
+    height: 55vh;
+}
+
+// section three 
+
+.section-three {
+    padding: 100px 0 70px 0;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    padding-bottom: 90px;
+}
+
+.gallery-image {
+    width: 40%;
+    margin: 0 100px;
+}
+
+.gallery-content {
+    width: 60%;
+
+    h3 {
+        padding-bottom: 30px;
+    }
+}
+
+.gallery-content p {
+    color: $grey;
+    font-size: 1.7rem;
+    padding-bottom: 15px;
+}
+
+.blue-link a {
+    color: $blue;
+    font-size: 1.7rem;
+
+    &:hover,
+    &:focus-within {
+        color: $link-blue;
+        border-bottom: 1px solid $link-blue;
+    }
+}
+
+.blue-link i {
+    padding-left: 10px;
+}
+
+hr {
+    width: 80%;
+}
+
+// section four 
+
+.section-four h3 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin: 0 20px;
+
+    p {
+        font-size: 1.7rem;
+        color: $grey;
+        padding-bottom: 15px;
+    }
+}
+
+h4 {
+    font-size: 2rem;
+    padding: 20px 0;
+    line-height: 1.5;
+}
+
+// section five 
+
+.section-five {
+    background: rgba(240, 245, 255, 1);
+    padding: 100px 0;
+    color: $dark-grey;
+    text-align: center;
+
+    p {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 1.7rem;
+        padding: 30px 0;
+    }
+}
+
+iframe {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 550px;
+    height: 300px;
+}
+
+// section six 
+
+.section-six {
+    background: $dark-purple;
+    color: $white;
+    padding-top: 50px;
+    text-align: center;
+
+    p {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.7rem;
+        padding: 30px 0;
+    }
+}
+
+.section-six h4 {
+    text-transform: uppercase;
+}
+
+.section-six .button {
+    padding: 10px;
+    margin: 20px 0 70px;
+}
+
+// footer 
+
+footer {
+    background: $foot-grey;
+    padding: 70px 0 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left p {
+    font-size: 1.3rem;
+    padding-top: 30px;
+    color: $grey;
+}
+
+.footer-right {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+        font-size: 1.5rem;
+        color: $grey;
+        padding-bottom: 10px;
+        line-height: 1.5;
+        width: 85%;
+
+        h5 {
+            font-size: 1.8rem;
+            color: $black;
+        }
+    }
+}
+
+.footer-right a:hover, 
+.footer-right a:focus-within {
+    border-bottom: 1px solid $grey;
+}
