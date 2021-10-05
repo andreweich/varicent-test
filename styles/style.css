@@ -245,7 +245,7 @@ body {
 
 .wrapper {
   max-width: 1400px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -290,10 +290,23 @@ p {
   font-size: 2rem;
 }
 
+.hamburger {
+  font-size: 2.5rem;
+  color: #6e6e6e;
+  margin: 0 20px;
+  display: none;
+}
+
 header {
   height: 10vh;
   padding: 20px 0;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-container {
@@ -321,6 +334,7 @@ header {
   width: 125px;
   font-size: 1.4rem;
   font-weight: 300;
+  color: #6e6e6e;
 }
 .main-nav li i {
   padding-left: 10px;
@@ -373,34 +387,39 @@ header {
 }
 
 .hero {
-  height: 65vh;
   background-image: url(../assets/header-img.webp);
-  background-size: cover;
-  background-position: center top;
+  background-size: auto 100%;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
 .hero-container {
-  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+
+.hero-left {
+  width: 50%;
 }
 
 .concert {
-  margin-left: 15rem;
-  width: 400px;
+  width: 60%;
+  min-width: 400px;
+  margin: 0 auto;
+  padding-right: 20px;
 }
 
 .hero-content {
-  width: 65%;
-  margin: 50px 0 50px 20rem;
+  width: 50%;
+  margin: 20px 0;
 }
 .hero-content p {
   font-size: 2rem;
@@ -413,43 +432,41 @@ header {
   padding: 10px;
 }
 
+.hero-mobile {
+  display: none;
+}
+
 .client-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   overflow-x: scroll;
   padding: 20px 0;
 }
 .client-container ul li {
   max-width: 120px;
   min-width: 120px;
-  margin: 0 auto;
+  margin: 0 10px;
 }
 
 .section-one {
   background-color: #335eeb;
   color: #f8f9fa;
-  height: 55vh;
 }
 
 .quota-alexander {
-  height: 55vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 30px;
+  padding: 50px 0;
 }
 
 .qa-content {
-  height: 40vh;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,8 +475,15 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.qa-content h2 {
+  padding-bottom: 20px;
+}
+.qa-content p {
+  padding-bottom: 40px;
 }
 .qa-content .button {
   -ms-flex-item-align: start;
@@ -471,13 +495,12 @@ header {
 }
 
 .qa-image {
-  width: 35%;
+  width: 40%;
 }
 
 .section-two {
   background-color: #10239e;
   color: #f8f9fa;
-  height: 55vh;
 }
 
 .section-three {
@@ -495,8 +518,8 @@ header {
 }
 
 .gallery-image {
-  width: 40%;
-  margin: 0 100px;
+  width: 50%;
+  margin: 0 50px;
 }
 
 .gallery-content {
@@ -612,7 +635,10 @@ iframe {
 
 footer {
   background: #f8f8f8;
-  padding: 70px 0 100px;
+  padding: 50px 0 100px;
+}
+footer .logo {
+  padding-top: 30px;
 }
 
 .footer-container {
@@ -653,4 +679,180 @@ footer {
 .footer-right a:hover,
 .footer-right a:focus-within {
   border-bottom: 1px solid #6e6e6e;
+}
+
+@media (max-width: 1084px) {
+  .main-nav li {
+    width: 100px;
+  }
+}
+@media (max-width: 946px) {
+  .main-nav {
+    display: none;
+  }
+
+  .nav-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .concert {
+    width: 40%;
+    min-width: 300px;
+  }
+
+  .hero-content p {
+    font-size: 1.7rem;
+  }
+
+  h2, h3 {
+    font-size: 2.5rem;
+  }
+
+  .news-item {
+    width: 30%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  .search-nav a {
+    display: none;
+  }
+
+  .search-nav .button {
+    display: none;
+  }
+
+  .hero {
+    background: #efefef;
+  }
+
+  .hero-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .hero-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .concert {
+    display: none;
+  }
+
+  .client-container ul li {
+    margin: 0 40px;
+  }
+
+  .quota-alexander {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quota-alexander .qa-content {
+    width: 100%;
+  }
+  .quota-alexander .qa-content p {
+    font-size: 1.6rem;
+  }
+
+  .qa-image {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery .gallery-image {
+    width: 80%;
+    margin: 20px 0;
+  }
+  .gallery .gallery-content {
+    width: 100%;
+  }
+  .gallery .gallery-content p, .gallery .gallery-content a {
+    font-size: 1.5rem;
+  }
+
+  .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .news-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .news-item {
+    width: 100%;
+    margin: auto;
+  }
+  .news-item p, .news-item a {
+    font-size: 1.5rem;
+  }
+
+  .section-five p {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  iframe {
+    width: 90%;
+  }
+
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .footer-right {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-right ul {
+    width: 50%;
+  }
+  .footer-right ul li {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .footer-left {
+    margin: 0 auto;
+  }
+  .footer-left .logo {
+    min-width: 200px;
+  }
+  .footer-left p {
+    text-align: center;
+  }
 }

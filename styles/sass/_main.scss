@@ -1,28 +1,34 @@
 // hero styles
 
 .hero {
-    height: 65vh;
+    // padding: 50px;
     background-image: url(../assets/header-img.webp);
-    background-size: cover;  
-    background-position: center top;
+    background-size: auto 100%;  
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
 .hero-container {
-    height: 70vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.hero-left {
+    width: 50%;
 }
 
 .concert {
-    margin-left: 15rem;
-    width: 400px;
+    width: 60%;
+    min-width: 400px;
+    margin: 0 auto;
+    padding-right: 20px;
 }
 
 .hero-content {
-    width: 65%;
-    margin: 50px 0 50px 20rem;
+    width: 50%;
+    margin: 20px 0;
 
     p {
         font-size: 2rem;
@@ -36,18 +42,21 @@
     padding: 10px;
 }
 
+.hero-mobile {
+    display: none;
+}
 // clients section 
 
 .client-container ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     overflow-x: scroll;
     padding: 20px 0;
 
     li {
         max-width: 120px;
         min-width: 120px;
-        margin: 0 auto;
+        margin: 0 10px;
     }
 }
 
@@ -56,27 +65,32 @@
 .section-one {
     background-color: rgba(51, 94, 235, 1);
     color: $light;
-    height: 55vh;
 }
 
 .quota-alexander {
-    height: 55vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin: 0 30px;
+    padding: 50px 0;
 }
 
 .qa-content {
-    height: 40vh;
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+
+    h2 {
+        padding-bottom: 20px;
+    }
+
+    p {
+        padding-bottom: 40px;
+    }
 
     .button {
         align-self: flex-start;
     }
+
 }
 
 .small {
@@ -84,13 +98,12 @@
 }
 
 .qa-image {
-    width: 35%
+    width: 40%;
 }
 
 .section-two {
     background-color: rgba(16, 35, 158, 1);
     color: $light;
-    height: 55vh;
 }
 
 // section three 
@@ -106,8 +119,8 @@
 }
 
 .gallery-image {
-    width: 40%;
-    margin: 0 100px;
+    width: 50%;
+    margin: 0 50px;
 }
 
 .gallery-content {
@@ -228,7 +241,11 @@ iframe {
 
 footer {
     background: $foot-grey;
-    padding: 70px 0 100px;
+    padding: 50px 0 100px;
+
+    .logo {
+        padding-top: 30px;
+    }
 }
 
 .footer-container {

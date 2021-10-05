@@ -4,6 +4,8 @@ header {
     height: 10vh;
     padding: 20px 0;
     background-color: $white;
+    display: flex;
+    align-items: center;
 }
 
 .nav-container {
@@ -25,6 +27,7 @@ header {
         width: 125px;
         font-size: 1.4rem;
         font-weight: 300;
+        color: $grey;
 
         i {
             padding-left: 10px;
