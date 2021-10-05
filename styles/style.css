@@ -407,6 +407,7 @@ header {
   color: #fff;
   text-align: center;
   font-size: 1.4rem;
+  font-weight: 500;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -422,7 +423,6 @@ header {
 .white {
   background: #fff;
   color: #10239e;
-  font-weight: 500;
 }
 .white:hover, .white:focus-within {
   background: #f8f8f8;
@@ -430,7 +430,7 @@ header {
 
 .hero {
   background-image: url(../assets/header-img.webp);
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }

@@ -48,7 +48,6 @@ header {
 
 .button {
     display: inline-block;
-    // width: 120px;
     padding: 7px 10px;
     border: 2px solid transparent;
     border-radius: 3px;
@@ -56,6 +55,7 @@ header {
     color: $white;
     text-align: center;
     font-size: 1.4rem;
+    font-weight: 500;
     transition: all 0.2s ease;
     cursor: pointer;
 }
@@ -72,7 +72,6 @@ header {
 .white {
     background: $white;
     color: $button-blue;
-    font-weight: 500;
 
     &:hover, 
     &:focus-within {
