@@ -1,0 +1,48 @@
+// dropdown styles
+
+.sub-menu,
+.sub-menu-2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: $white;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
+    width: 250px;
+    border-radius: 3px;
+
+    li {
+        padding: 15px;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+.sub-menu li:hover, 
+.sub-menu li:focus-within {
+    background: #e9edfd;
+    color: $blue;
+}
+
+.sub-menu-2 {
+    left: 250px;
+    top: -10px;
+}
+
+.dropdown, 
+.second-drop {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown:hover .sub-menu,
+.dropdown:focus-within .sub-menu {
+    display: block;
+}
+
+.second-drop:hover .sub-menu-2,
+.second-drop:hover .sub-menu-2 {
+    display: block;
+}

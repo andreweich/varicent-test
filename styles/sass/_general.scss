@@ -1,5 +1,4 @@
-// font-family: 'Merriweather', serif;
-// font-family: 'Inter', sans-serif;
+// general styles
 
 html {
     font-size: 62.5%;
@@ -56,9 +55,47 @@ p {
     font-size: 2rem;
 }
 
+// hamburger menu 
+
 .hamburger {
     font-size: 2.5rem;
     color: $grey;
     margin: 0 20px;
     display: none;
+    cursor: pointer;
 }
+
+.mobile {
+    display: none;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $grey;
+    padding: 30px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: $white;
+    z-index: 100;
+    height: 30%;
+
+    .sub-menu-2 {
+        left: 100px;
+        width: auto;
+    }
+}
+
+.open-menu {
+    display: flex;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
